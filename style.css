@@ -1,0 +1,134 @@
+* {
+    font-family: 'Indie Flower';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* jumbotron */
+#mainpage {
+    background-image: url(img/mainpage.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 240px;
+}
+
+#comment {
+    background-color: black !important;
+}
+
+/* devider */
+.breadcrumb {
+    margin-top: 40px;
+    background-color: rgb(44, 44, 44);
+    box-shadow: 0 1px 2px 3px rgb(39, 39, 39);
+}
+
+/* carousel */
+#carousel {
+    margin-top: 40px;
+}
+
+.carousel-item img {
+    height: 200px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, .5);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    z-index: 10;
+}
+
+.carousel-caption p {
+    margin-top: 80px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.carousel-item .frontground {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: -200px auto;
+}
+
+.carousel-item h6 {
+    margin-top: 220px;
+}
+
+.carousel-item h6,
+.carousel-item p,
+.carousel-item small {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* desktop */
+@media (min-width:992px) {
+
+    /* navbar */
+    .navbar-nav {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        text-shadow: 1px 1px 3px rgba(black, black, black, .6);
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid greenyellow;
+        width: 50px;
+        margin: -3px auto;
+    }
+
+    /* jumbotron */
+    #mainpage {
+        height: 780px;
+    }
+
+    /* devider */
+    #hotnews {
+        margin-top: -400px;
+    }
+
+    .breadcrumb {
+        background-color: black;
+        opacity: .5;
+        box-shadow: 0 1px 2px 3px rgba(150, 150, 150, .5);
+    }
+
+    /* carousel */
+    .carousel-caption {
+        left: 160px;
+        right: 160px;
+    }
+
+    .carousel-item img {
+        margin-top: 50px;
+    }
+
+    .carousel-item p {
+        font-size: 20px;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
