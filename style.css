@@ -38,6 +38,11 @@ body {
     /* navbar */
     .fixed-top {
         top: -60px;
+        transition: top 3s;
+    }
+    .fixed-top:hover {
+        top: 0 !important;
+        transition: top 3s;
     }
     .navbar-nav {
         font-size: 1.5rem;
