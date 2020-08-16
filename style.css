@@ -31,18 +31,20 @@ body {
     column-count: 2;
 }
 
-/* desktop */
-@media (min-width:992px) {
 
+/* desktop */
+
+@media (min-width:992px) {
     /* navbar */
+    .fixed-top {
+        top: -60px;
+    }
     .navbar-nav {
         font-size: 1.5rem;
     }
-
     .nav-link {
         text-shadow: 1px 1px 3px rgba(black, black, black, .6);
     }
-
     .nav-link:hover::after {
         content: '';
         display: block;
@@ -50,16 +52,13 @@ body {
         width: 50px;
         margin: -3px auto;
     }
-
     .card-columns {
         column-count: 5;
     }
-
     /* jumbotron */
     #mainpage {
         height: 780px;
     }
-
     #hotnews {
         position: absolute;
         bottom: 0;
