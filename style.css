@@ -8,8 +8,24 @@ body {
     background-color: black;
 }
 
+.fixed-top {
+    top: 0px;
+    transition: top 3s;
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, .5);
+}
+
+#dim {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
 }
 
 #mainpage {
@@ -31,10 +47,18 @@ body {
     column-count: 2;
 }
 
+.card-columns .card h5 {
+    display: none;
+}
+
+.card-columns .card-body {
+    display: none;
+}
+
 
 /* desktop */
 
-@media (min-width:992px) {
+@media (min-width:576px) {
     /* navbar */
     .fixed-top {
         top: -60px;
@@ -59,6 +83,12 @@ body {
     }
     .card-columns {
         column-count: 5;
+    }
+    .card-columns .card h5 {
+        display: block;
+    }
+    .card-columns .card-body {
+        display: block;
     }
     /* jumbotron */
     #mainpage {
